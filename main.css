@@ -1,0 +1,114 @@
+
+
+#sombra-container{
+   background-color: #ddd;
+   width: 200px;
+   padding: 10px;
+   vertical-align: center;
+   border-radius: 1.5px;
+   box-shadow: 15px 15px 20px #333;
+   -webkit-box-shadow: 15px 15px 20px #333;
+   -moz-box-shadow: 15px 15px 20px #333;
+}
+
+Read more: http://www.linhadecodigo.com.br/artigo/3633/entendendo-o-atributo-box-shadow-nas-css3.aspx#ixzz4g4mih5Cg
+
+
+figure img { border: 1px solid #ccc; }
+h1,h2,h3,h4 { clear: both; }
+/* Prevent the contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+dd {
+  padding: 5px 0;
+}
+.column	 {
+  height: 150px;
+  width: 150px;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  margin-right: 5px;
+
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px  #000;
+  -moz-box-shadow: 0 1px 1px  #000;
+  -ms-box-shadow: 0 1px 1px  #000;
+  -o-box-shadow: 0 1px 1px  #000;
+  box-shadow: 0 1px 1px  #000;
+  
+  text-align: center;
+  cursor: move;
+  margin-bottom: 20px;
+}
+.column header {
+  border-radius: 4px;
+  color: #fff;
+  text-shadow: #000 0 1px;
+  box-shadow: 5px;
+  padding: 5px;
+  background: #337ab7;
+  border-bottom: 1px solid  #000;
+}
+#columns-full .column {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+}
+#columns-full .column.over,
+#columns-dragOver .column.over,
+#columns-dragEnd .column.over,
+#columns-almostFinal .column.over {
+  border: 2px dashed #000;
+}
+#columns-full .column.moving {
+  opacity: 0.25;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+#columns-full .column .count {
+  padding-top: 15px;
+  font-weight: bold;
+  text-shadow: #fff 0 1px;
+}
+
+a.dcontexto {
+	position: relative;
+	font: 12px arial, verdana, helvetica, sans-serif;
+	padding: 0;
+	color: #039;
+	text-decoration: none;
+	cursor: help;
+	z-index: 24;
+}
+a.dcontexto:hover {
+	background: transparent;
+	z-index: 25;
+}
+a.dcontexto span {
+	display: none;
+}
+a.dcontexto:hover span {
+	display: block;
+	position: absolute;
+	width: 230px;
+	top: 0em;
+	text-align: justify;
+	left: 6em;
+	font: 10px Verdana, arial, helvetica, sans-serif;
+	padding: 5px 10px;
+	border: 1px solid #999;
+	background: #E8EBF2;
+	color: #000;
+}
+
